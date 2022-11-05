@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+html {
+}
+
 body {
     display: flex;
     flex-direction: column;
     font-family: Roboto, sans-serif;
+    height: 100vh;
 }
 
 .bar {
     display: flex;
-    background-color: #1F2937;
+    background-color: #1F2937;    
 }
 
 .bar a {
@@ -38,4 +42,32 @@ body {
     font-size: 24px;
     color: #F9FAF8;
     margin-left: 10px;
+}
+
+.contentboxone {
+    display: flex;
+}
+
+.left-text {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    justify-content: center;
+    align-items: left;
+}
+
+button {
+    color: white;
+    background: #3882F6;
+    border: 1px solid #3882F6;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+.contentboxtwo {
+    display: flex;
+}
+
+.contentboxthree {
+    display: flex;
 }
