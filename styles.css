@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 
 body {
     display: flex;
@@ -12,13 +12,6 @@ body {
     width: -webkit-fill-available;
     width: fill-available;
 }
-
-/* .flex-fill {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
 
 .bar {
     display: flex;
@@ -156,14 +149,14 @@ button {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
 }
 
 .series {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .imageborder {
@@ -183,5 +176,27 @@ button {
 
 .content-box-three {
     display: flex;
-    flex: initial;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    /* border: 1px solid red; */
+}
+
+.quote {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    margin: 5rem 5rem 0rem 5rem;
+    /* border: 1px solid yellow; */
+}
+
+.quote-source {
+    /* border: 1px solid yellow; */
+    align-self: flex-end;
+    font-weight: bolder;
+    margin: 1rem 5rem 5rem 0rem;
+}
+
+.subscribe-box {
+    
 }
