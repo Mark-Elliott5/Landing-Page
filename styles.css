@@ -54,16 +54,14 @@ body {
 .bar.top .logo {
     font-size: 24px;
     color: #F9FAF8;
-    margin-left: 10px;
     font-weight: bold;
-    border: 1px solid red;
     flex: 0 0 1;
 }
 
 .contentboxone {
     background-color: #1F2937;
     /* border: 2px solid purple; */
-    padding: 5rem;
+    padding: 2rem;
 }
 
 .text-and-image {
@@ -71,6 +69,7 @@ body {
     flex-direction: row;
     border: 1px solid purple;
     gap: 5rem;
+    align-items: center;
 }
 
 .landscape-image {
@@ -98,14 +97,28 @@ body {
         flex-direction: column;
         gap: 1rem;
     }
+
+    .contentboxone {
+        padding: 0.5rem 2.5rem 2.5rem;
+    }
+
+    .left-text {
+        padding: 0 !important;
+    }
+
+    .bar.top {
+        flex-direction: column;
+        padding-top: 1rem;
+    }
 }
 
 .left-text {
-    flex: 1 1 1;
     border: 1px solid red;
-    justify-content: center;
-    align-items: left;
-    /* flex: 1 1 0; */
+    min-width: 303px;
+    padding-left: 0rem;
+    padding-top: 3rem;
+    padding-right: 0rem;
+    padding-bottom: 3rem;
 }
 
 .left-text > p {
@@ -116,10 +129,11 @@ body {
     color: #F9FAF8;
     font-size: 48px;
     font-weight: bolder;
+    margin: 0.35rem
 }
 
-.left-text > * {
-    margin: 0.35rem;
+.left-text > p, button {
+    margin: 0.45rem;
 }
 
 button {
