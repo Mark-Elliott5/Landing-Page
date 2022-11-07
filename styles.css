@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-html {
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -10,6 +7,11 @@ body {
     /* height: 100vh; */
     margin: 0;
     padding: 0;
+    /*
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available; */
 }
 
 /* .flex-fill {
@@ -22,6 +24,7 @@ body {
 .bar {
     display: flex;
     background-color: #1F2937;
+    white-space: nowrap;
 }
 
 .bar a {
@@ -30,7 +33,7 @@ body {
 }
 
 .bar.top {
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex: none;
 }
@@ -54,6 +57,12 @@ body {
     color: #F9FAF8;
     margin-left: 10px;
     font-weight: bold;
+    border: 1px solid red;
+    flex: 0 0 1;
+}
+
+.image {
+    max-width: 1px;
 }
 
 .contentboxone {
@@ -62,15 +71,22 @@ body {
     background-color: #1F2937;
     /* border: 2px solid purple; */
     padding: 5rem;
+    flex: 0 0 auto;
+
 }
 
+
 .left-text {
-    display: flex;
-    flex-direction: column;
-    /* border: 2px solid red; */
+    border: 1px solid red;
     justify-content: center;
     align-items: left;
-    max-width: 50%;
+    align-self: start;
+    max-width: 30rem;
+    min-width: 15rem;
+    flex: initial;
+    flex-wrap: nowrap;
+    margin-left: 1rem;
+    margin-right: 5rem;
 }
 
 .left-text > p {
@@ -84,7 +100,7 @@ body {
 }
 
 .left-text > * {
-    margin: 0.25rem;
+    margin: 0.35rem;
 }
 
 button {
@@ -99,6 +115,7 @@ button {
     display: flex;
     flex-flow: row wrap;
     border: 2px solid red;
+    flex: initial;
 }
 
 .series-layout {
@@ -122,4 +139,5 @@ button {
 
 .contentboxthree {
     display: flex;
+    flex: initial;
 }
