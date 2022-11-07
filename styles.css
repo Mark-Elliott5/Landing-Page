@@ -67,17 +67,18 @@ body {
 .text-and-image {
     display: flex;
     flex-direction: row;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     gap: 5rem;
     align-items: center;
 }
 
 .landscape-image {
     min-width: none;
-    border: 2px solid red;
+    max-width: 50%;
     overflow: auto;
     align-self: stretch;
     margin: 0;
+    /* border: 2px solid red; */
 }
 
 .landscape-image > img {
@@ -86,35 +87,8 @@ body {
     object-fit: none;
 }
 
-/*
-@media screen and (max-width: 600px) {
-
-    .landscape-image {display:none;}
-} */
-
-@media screen and (max-width: 800px) {
-    .text-and-image {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .contentboxone {
-        padding: 0.5rem 2.5rem 2.5rem;
-    }
-
-    .left-text {
-        padding: 0 !important;
-    }
-
-    .bar.top {
-        flex-direction: column;
-        padding-top: 1rem;
-    }
-}
-
 .left-text {
-    border: 1px solid red;
-    min-width: 303px;
+    /* border: 1px solid red; */
     padding-left: 0rem;
     padding-top: 3rem;
     padding-right: 0rem;
@@ -142,6 +116,35 @@ button {
     border: 1px solid #3882F6;
     border-radius: 8px;
     padding: 8px 16px;
+}
+
+@media screen and (max-width: 800px) {
+    .text-and-image {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contentboxone {
+        padding: 0.5rem 2.5rem 2.5rem;
+    }
+
+    .left-text {
+        padding: 0 !important;
+        text-align: center;
+    }
+
+    button {
+        width: 100%
+    }
+
+    .bar.top {
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+
+    .landscape-image {
+        max-width: none;
+    }
 }
 
 .contentboxtwo {
