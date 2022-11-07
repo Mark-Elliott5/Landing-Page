@@ -58,7 +58,7 @@ body {
     flex: 0 0 1;
 }
 
-.contentboxone {
+.content-box-one {
     background-color: #1F2937;
     /* border: 2px solid purple; */
     padding: 2rem;
@@ -118,13 +118,13 @@ button {
     padding: 8px 16px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1025px) {
     .text-and-image {
         flex-direction: column;
         gap: 1rem;
     }
 
-    .contentboxone {
+    .content-box-one {
         padding: 0.5rem 2.5rem 2.5rem;
     }
 
@@ -147,15 +147,23 @@ button {
     }
 }
 
-.contentboxtwo {
-    display: flex;
-    flex-flow: row wrap;
-    border: 2px solid red;
-    flex: initial;
+.content-box-two {
+    text-align: center;
 }
 
 .series-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
     border: 2px solid orange;
+}
+
+.series {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
 }
 
 .imageborder {
@@ -163,8 +171,8 @@ button {
     font-size: 26px;
     font-weight: 700;
     background: white;
-    width: 42px;
-    height: 42px;
+    width: 150px;
+    height: 150px;
     border-radius: 10%;
     border: 2px solid #3882F6;
     display: flex;
@@ -173,7 +181,7 @@ button {
     flex: none;
 }
 
-.contentboxthree {
+.content-box-three {
     display: flex;
     flex: initial;
 }
