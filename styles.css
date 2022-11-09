@@ -200,6 +200,14 @@ body {
     color: #E5E7EB;
 }
 
+.full-text {
+    display: inline;
+}
+
+.short-text {
+    display: none;
+}
+
 .subscribe-box > button {
     color: white;
     background: #3882F6;
@@ -244,7 +252,20 @@ body {
         justify-content: center;
     }
 
+    .subscribe-text {
+        text-align: center;
+    }
+
     .subscribe-box > button {
         margin: 0;
     }
+
+    .full-text {
+        display: none;
+    }
+
+    .short-text {
+        display: inline;
+    }
+
 }
