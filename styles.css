@@ -15,13 +15,13 @@ body {
 
 .bar {
     display: flex;
-    background-color: #1F2937;
+    background-color: #000000;
     white-space: nowrap;
 }
 
 .bar a {
     text-decoration: none;
-    color: #E5E7EB;
+    color: #5ea982;
 }
 
 .bar.top {
@@ -45,14 +45,16 @@ body {
 }
 
 .bar.top .logo {
-    font-size: 24px;
-    color: #F9FAF8;
-    font-weight: bold;
-    flex: 0 0 1;
+    margin-left: 1rem;
+    align-items: center;
+}
+
+.logo-image {
+    width: 20%;
 }
 
 .content-box-one {
-    background-color: #1F2937;
+    background-color: rgb(77, 77, 77);;
     /* border: 2px solid purple; */
     padding: 2rem;
 }
@@ -65,13 +67,17 @@ body {
     align-items: center;
 }
 
-.landscape-image {
-    min-width: none;
-    max-width: 50%;
+.landscape-image-container {
     overflow: auto;
     align-self: stretch;
+    justify-content: center;
     margin: 0;
     /* border: 2px solid red; */
+}
+
+.landscape-image {
+    width: 100%;
+    text-align: center;
 }
 
 .landscape-image > img {
@@ -89,11 +95,11 @@ body {
 }
 
 .left-text > p {
-    color: #E5E7EB;
+    color: #5ea982;
 }
 
 .left-text > h1 {
-    color: #F9FAF8;
+    color: #6bbb92;
     font-size: 48px;
     font-weight: bolder;
     margin: 0.35rem
@@ -105,8 +111,8 @@ body {
 
 .content-box-one button {
     color: white;
-    background: #3882F6;
-    border: 1px solid #3882F6;
+    background: #6bbb92;
+    border: 1px solid #5ea982;
     border-radius: 8px;
     padding: 8px 16px;
 }
@@ -114,7 +120,7 @@ body {
 .content-box-two {
     text-align: center;
     background-color: black;
-    color: rgb(0, 226, 98);
+    color: #6bbb92;
 }
 
 .series-layout {
@@ -130,24 +136,25 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0.5rem;
+    flex: initial;
     /* margins and text width need to be reevaluated so that maybe text lines 
     up with width of final images when they are decided and implemented */
     /* border: 1px solid red; */
 }
 
+.series-text {
+    width: 50%;
+    color: #5ea982;
+}
+
 .imageborder {
-    width: 25%;
-    height: 25%;
+    width: 50%;
+    height: 50%;
     /* border: 2px solid #3882F6; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: none;
 }
 
 .codec-portrait {
     max-width: 100%;
-    max-height: 100%;
     /* outline: 2px solid green; */
     box-shadow: 0px 0px 10px 3px rgba(0, 255, 119, 0.543);
     
@@ -245,6 +252,11 @@ body {
     .bar.top {
         flex-direction: column;
         padding-top: 1rem;
+    }
+
+    .bar.top .logo {
+        margin-left: 0;
+        text-align: center;
     }
 
     .landscape-image {
