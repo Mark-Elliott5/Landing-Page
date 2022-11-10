@@ -113,6 +113,8 @@ body {
 
 .content-box-two {
     text-align: center;
+    background-color: black;
+    color: rgb(0, 226, 98);
 }
 
 .series-layout {
@@ -134,18 +136,21 @@ body {
 }
 
 .imageborder {
-    color: #3882F6;
-    font-size: 26px;
-    font-weight: 700;
-    background: white;
-    width: 150px;
-    height: 150px;
-    border-radius: 10%;
-    border: 2px solid #3882F6;
+    width: 25%;
+    height: 25%;
+    /* border: 2px solid #3882F6; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex: none;
+}
+
+.codec-portrait {
+    max-width: 100%;
+    max-height: 100%;
+    /* outline: 2px solid green; */
+    box-shadow: 0px 0px 10px 3px rgba(0, 255, 119, 0.543);
+    
 }
 
 .content-box-three {
