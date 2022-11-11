@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
 
 body {
     display: flex;
     flex-direction: column;
-    font-family: Roboto, sans-serif;
+    font-family: Roboto, sans-serif, sys;
     /* height: 100vh; */
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -33,7 +35,7 @@ body {
 .bar.bottom {
     justify-content: center;
     align-items: center;
-    color: #E5E7EB;
+    color: #5ea982;
     padding: 10px;
 }
 
@@ -42,10 +44,12 @@ body {
     gap: 10px;
     list-style: none;
     margin-right: 10px;
+    padding-left: 0;
 }
 
 .bar.top .logo {
     margin-left: 1rem;
+    margin-top: 0.25rem;
     align-items: center;
 }
 
@@ -54,7 +58,8 @@ body {
 }
 
 .content-box-one {
-    background-color: rgb(77, 77, 77);;
+    /* background-color: rgb(77, 77, 77); */
+    background: linear-gradient(to right, #2c8c5b, #45715a);
     /* border: 2px solid purple; */
     padding: 2rem;
 }
@@ -95,11 +100,13 @@ body {
 }
 
 .left-text > p {
-    color: #5ea982;
+    /* color: #5ea982; */
+    color: white;
 }
 
 .left-text > h1 {
-    color: #6bbb92;
+    /* color: #6bbb92; */
+    color: white;
     font-size: 48px;
     font-weight: bolder;
     margin: 0.35rem
@@ -119,8 +126,11 @@ body {
 
 .content-box-two {
     text-align: center;
-    background-color: black;
-    color: #6bbb92;
+    background-color: #030805;
+    color: #5ea982;
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 255, 119, 0.543);
+    font-family: "Inter";
+    font-weight: 300;
 }
 
 .series-layout {
@@ -135,15 +145,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 0.5rem;
     flex: initial;
+    width: 25%;
     /* margins and text width need to be reevaluated so that maybe text lines 
     up with width of final images when they are decided and implemented */
     /* border: 1px solid red; */
 }
 
 .series-text {
-    width: 50%;
+    width: 100%;
     color: #5ea982;
 }
 
@@ -257,6 +269,12 @@ body {
     .bar.top .logo {
         margin-left: 0;
         text-align: center;
+    }
+
+    .right-links {
+        padding: 0;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .landscape-image {
