@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap');
 
 body {
     display: flex;
     flex-direction: column;
-    font-family: Roboto, sans-serif, sys;
-    /* height: 100vh; */
+    font-family: Inter, Roboto, sans-serif, sys;
+    height: 100vh;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -58,26 +58,21 @@ body {
 }
 
 .content-box-one {
-    /* background-color: rgb(77, 77, 77); */
     background: linear-gradient(to right, #2c8c5b, #45715a);
-    /* border: 2px solid purple; */
     padding: 2rem;
 }
 
 .text-and-image {
     display: flex;
     flex-direction: row;
-    /* border: 1px solid purple; */
     gap: 5rem;
     align-items: center;
 }
 
 .landscape-image-container {
     overflow: auto;
-    align-self: stretch;
     justify-content: center;
     margin: 0;
-    /* border: 2px solid red; */
 }
 
 .landscape-image {
@@ -92,20 +87,18 @@ body {
 }
 
 .left-text {
-    /* border: 1px solid red; */
     padding-left: 0rem;
     padding-top: 3rem;
     padding-right: 0rem;
     padding-bottom: 3rem;
+    width: 80%;
 }
 
 .left-text > p {
-    /* color: #5ea982; */
     color: white;
 }
 
 .left-text > h1 {
-    /* color: #6bbb92; */
     color: white;
     font-size: 48px;
     font-weight: bolder;
@@ -118,8 +111,8 @@ body {
 
 .content-box-one button {
     color: white;
-    background: #6bbb92;
-    border: 1px solid #5ea982;
+    background: linear-gradient(to left, #2c8c5b, #45715a);
+    border: 2px solid white;
     border-radius: 8px;
     padding: 8px 16px;
 }
@@ -138,20 +131,15 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    /* border: 2px solid orange; */
 }
 
 .series {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin: 0.5rem;
-    flex: initial;
+    flex: none;
     width: 25%;
-    /* margins and text width need to be reevaluated so that maybe text lines 
-    up with width of final images when they are decided and implemented */
-    /* border: 1px solid red; */
 }
 
 .series-text {
@@ -162,12 +150,10 @@ body {
 .imageborder {
     width: 50%;
     height: 50%;
-    /* border: 2px solid #3882F6; */
 }
 
 .codec-portrait {
     max-width: 100%;
-    /* outline: 2px solid green; */
     box-shadow: 0px 0px 10px 3px rgba(0, 255, 119, 0.543);
     
 }
@@ -175,45 +161,45 @@ body {
 .content-box-three {
     display: flex;
     flex-direction: column;
-    background-color: #E5E7EB;
-    /* border: 1px solid red; */
+    background: linear-gradient(to right, #2c8c5b, #45715a);
 }
 
 .quote {
-    color: #1F2937;
+    color: white;
     font-size: 36px;
-    font-weight: lighter;
+    font-weight: 200;
     font-style: italic;
     margin: 5rem 5rem 0rem 5rem;
-    /* border: 1px solid yellow; */
 }
 
 .quote-source {
-    /* border: 1px solid yellow; */
     align-self: flex-end;
-    font-weight: bolder;
+    font-weight: 700;
     margin: 1rem 5rem 5rem 0rem;
+    color: white;
 }
 
 .content-box-four {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #030805;
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 255, 119, 0.543);
 }
 
 .subscribe-box {
     display: flex;
-    background-color: #3882F6;
+    background: linear-gradient(to right, #2c8c5b, #45715a);
     margin: 4rem;
     padding: 2rem 8rem;
     border-radius: 8px;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 10px 2px rgba(0, 255, 119, 0.543);
 }
 
 .subscribe-text {
     color: white;
-    /* border: 1px solid red; */
 }
 
 .subscribe-text > * {
@@ -234,7 +220,7 @@ body {
 
 .subscribe-box > button {
     color: white;
-    background: #3882F6;
+    background: linear-gradient(to left, #2c8c5b, #45715a);
     border: 1px solid #3882F6;
     border-radius: 8px;
     padding: 8px 16px;
@@ -255,6 +241,7 @@ body {
     .left-text {
         padding: 0 !important;
         text-align: center;
+        width: auto;
     }
 
     button {
@@ -269,6 +256,14 @@ body {
     .bar.top .logo {
         margin-left: 0;
         text-align: center;
+    }
+
+    .series-layout {
+        flex-direction: column;
+    }
+
+    .series {
+        width: 60%;
     }
 
     .right-links {
@@ -289,6 +284,7 @@ body {
 
     .subscribe-text {
         text-align: center;
+        margin: 0.25rem;
     }
 
     .subscribe-box > button {
