@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap');
 
 body {
     display: flex;
     flex-direction: column;
-    font-family: Inter, Roboto, sans-serif, sys;
+    font-family: Inter, sans-serif;
     height: 100vh;
     overflow-x: hidden;
     margin: 0;
