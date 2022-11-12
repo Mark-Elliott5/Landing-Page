@@ -228,25 +228,6 @@ body {
 }
 
 @media screen and (max-width: 1025px) {
-    .text-and-image {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .content-box-one {
-        padding: 0rem 2.5rem 2.5rem;
-    }
-
-    .left-text {
-        padding: 0 !important;
-        text-align: center;
-        width: auto;
-    }
-
-    button {
-        width: 100%
-    }
-
     .bar.top {
         flex-direction: column;
         padding-top: 1rem;
@@ -261,22 +242,41 @@ body {
         width: 50%;
     }
 
-    .series-layout {
-        flex-direction: column;
-    }
-
-    .series {
-        width: 60%;
-    }
-
     .right-links {
         padding: 0;
         margin-right: 0;
         margin-left: 0;
     }
 
+    .content-box-one {
+        padding: 0rem 2.5rem 2.5rem;
+    }
+
+    .text-and-image {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .left-text {
+        padding: 0 !important;
+        text-align: center;
+        width: auto;
+    }
+
+    button {
+        width: 100%
+    }
+
     .landscape-image {
         max-width: none;
+    }
+
+    .series-layout {
+        flex-direction: column;
+    }
+
+    .series {
+        width: 60%;
     }
 
     .subscribe-box {
@@ -304,4 +304,7 @@ body {
         display: inline;
     }
 
+    .bar.bottom {
+        flex-direction: column;
+    }
 }
