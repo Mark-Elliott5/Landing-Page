@@ -257,6 +257,10 @@ body {
         text-align: center;
     }
 
+    .logo-image {
+        width: 50%;
+    }
+
     .series-layout {
         flex-direction: column;
     }
