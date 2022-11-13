@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap');
 
+/* Nav bar */
+
 body {
     display: flex;
     flex-direction: column;
@@ -56,6 +58,8 @@ body {
 .logo-image {
     width: 20%;
 }
+
+/* Content box one */
 
 .content-box-one {
     background: linear-gradient(to right, #2c8c5b, #45715a);
@@ -117,6 +121,8 @@ body {
     padding: 8px 16px;
 }
 
+/* Content box two */
+
 .content-box-two {
     text-align: center;
     background-color: #030805;
@@ -158,6 +164,8 @@ body {
     
 }
 
+/* Content box three */
+
 .content-box-three {
     display: flex;
     flex-direction: column;
@@ -178,6 +186,8 @@ body {
     margin: 1rem 5rem 5rem 0rem;
     color: white;
 }
+
+/* Content box four */
 
 .content-box-four {
     display: flex;
@@ -227,6 +237,8 @@ body {
     border: 2px solid white;
     margin: 0rem 0rem 0rem 3rem;
 }
+
+/* Media query */
 
 @media screen and (max-width: 1025px) {
     .bar.top {
