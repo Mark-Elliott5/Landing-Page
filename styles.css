@@ -238,6 +238,11 @@ body {
     margin: 0rem 0rem 0rem 3rem;
 }
 
+.github-link {
+    width: 1rem;
+    margin-left: 5px;
+}
+
 /* Media query */
 
 @media screen and (max-width: 1025px) {
